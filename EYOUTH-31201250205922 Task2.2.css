@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #555;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: white;
+    min-height: 100px;
+    padding: 10px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px #cccccc;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    margin-bottom: -5px;
+}
+
+.logo h1 {
+    color: #555;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e85d9e;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 450px;
+    background: linear-gradient(135deg, #f8d9e7, #eeeeee);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.small-title {
+    color: #e85d9e;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.hero-text h2 {
+    font-size: 60px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.main-button {
+    display: inline-block;
+    background: #e85d9e;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background: #c94882;
+    transform: translateY(-10px);
+}
+
+
+/* ================= HERO LOGO ================= */
+
+.hero-logo {
+    text-align: center;
+}
+
+.hero-logo img {
+    width: 210px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.big-logo {
+    width: 190px;
+    height: 190px;
+    border: 8px solid #e85d9e;
+    border-radius: 50%;
+    background: white;
+    color: #777;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+    font-weight: bold;
+    box-shadow: 0 10px 30px #cccccc;
+    transition: 0.3s;
+}
+
+.big-logo:hover {
+    transform: scale(1.05);
+}
+
+.hero-logo span {
+    display: block;
+    margin-top: -15px;
+    color: #777;
+    font-weight: bold;
+    letter-spacing: 4px
+}
+
+
+/* ================= STORES ================= */
+
+.stores {
+    padding: 70px 8%;
+    background: white;
+    text-align: center;
+}
+
+.stores h2 {
+    font-size: 38px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.section-text {
+    color: #999;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+.store-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.store-card {
+    width: 220px;
+    min-height: 280px;
+    background: #f7f7f7;
+    border-radius: 15px;
+    padding: 25px 18px;
+    box-shadow: 0 5px 18px #dddddd;
+    transition: 0.3s;
+}
+
+.store-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #cccccc;
+}
+
+.store-icon {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 50%;
+    background: #e85d9e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.store-card h3 {
+    margin: 20px 0 10px;
+    color: #555;
+    font-size: 22px;
+}
+
+.store-card p {
+    color: #888;
+    line-height: 1.5;
+    min-height: 50px;
+}
+
+.store-card a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #555;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.store-card a:hover {
+    background: #e85d9e;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+    text-align: center;
+    padding: 70px 15%;
+    background: #eeeeee;
+}
+
+.about h2 {
+    color: #555;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #555;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .hero-text h2 {
+        font-size: 42px;
+    }
+
+    .hero-logo {
+        margin-top: 20px;
+    }
+
+    .stores {
+        padding: 50px 5%;
+    }
+
+    .store-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .about {
+        padding: 50px 8%;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+}
